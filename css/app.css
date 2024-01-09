@@ -1,0 +1,28 @@
+body
+{
+    background-image: url('../images/MU-chinh-thuc-hoi-mua-sao-Serie-A-Martial-duoc-ong-lon-Tho-Nhi-Ky-quan-tam-mu-1704530188-858-width740height495.jpg');
+    background-size: cover; /*syntax cover ảnh trong 1 vùng văn bản*/
+}
+
+h1
+{
+    color : #2515d6cd; /* Màu của font chữ*/
+}
+
+p
+{
+    color : black;
+    font-size : 16px; /*Độ to nhỏ font chữ*/
+    line-height: 1.5; /* Đỗ giãn giữa các dòng */
+    font-family: Arial, Helvetica, sans-serif;/* có thể type vào nhiều font chữ,nếu font trước lỗi comp sẽ sử dụng font sau */
+    text-align: justify;/* left,center,right,justify căn chỉnh lề dòng */
+    text-decoration: none; /*underline:gạch chân dưới dòng,line-through gạch giữa chữ,overline gạch trên chữ,none không gạch*/
+    text-transform: none; /* uppercase : in hoa hết,lowercase : không in hoa hết,capitalize : in hoa những chữ cái đầu tiên
+                                của từng từ 1,none : viết như nào in ra như vậy*/
+    font-weight : 400;
+    /* 100 - thin,200 - semi-light,300 - light,400 - normal,500 - medium,600 - semi-bold,700 - bold,800 - extra-bold,900 - black */
+    /* Dùng font-weight để sửa đổi độ dày của chữ cái */
+    background-color: none;/*Màu nền của font chữ*/
+    width: 600px;/*Độ ngắn dài của form văn bản*/
+    border-bottom: 2px solid #d61515cd; /*1 đường cắt ngang sau khi kết thúc 1 đoạn văn bản*/
+}
