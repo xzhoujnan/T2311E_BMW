@@ -1,0 +1,62 @@
+body a
+{
+    text-align: center;
+}
+
+div
+{
+    width: calc(33.33% - 42px); /* Cộng trừ nhân chia phải cách các phần tử ra */
+    /* height : 400px; */
+
+    float: left;/* syntax để đẩy 1 box theo hướng nào đó */ /* left,right,none */
+
+    margin: 10px;/*Trên,phải,dưới,trái lần lượt*/ 
+    /* Nếu như thiếu giá trị,cạnh thiếu sẽ lấy số của cạnh đối diện,thiếu trái => trái lấy phải */
+    /* Là khoảng cách xung quanh */
+
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px; Khoảng cách xung quanh từ 4 phía */
+
+    /*border: 1px solid gray;*/ /* Lớp viền bao quanh 1 box, ít khi đc sử dụng */
+
+    padding: 10px; /* Khoảng cách giữa body và rìa border của 1 box */
+    /*
+    padding-top , padding-right, padding-bottom, padding-left
+    */
+
+
+    /* một số lệnh làm đẹp */
+    box-shadow: 0 0 5px red; /* Độ mờ bóng của 1 đường viền */
+    border-radius: 5px;/* Độ cắt góc của 1 đường viền box */
+    transition: all 300ms; /* Làm cho các hiệu ứng trở nên mềm mại hơn , 300 milisecond */  
+}
+
+div:hover/* Khi người dùng đưa chuột vào box sẽ hiển thị lê */
+{
+    background-color: rgba(173, 90, 90, 0.845);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    /* transform: rotate(360deg); xoay(... độ) */
+    /* transform: translate(100px,0); */
+    transform: scale(1.1); /*Làm cho các box dịch chuyển theo hướng khi di chuyển chuột đến */
+}
+
+img
+{
+    max-width : 100%; /* độ rộng của ảnh là 100% so với phần tử chứa nó là div => 100% x 350px */
+    height: auto;
+}
+
+div a
+{
+    color: red;
+    text-decoration: none;
+}
+
+/* #special
+{
+    background-color: blue;
+}*/
+
+/* .class{} */
