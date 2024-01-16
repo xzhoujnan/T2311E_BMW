@@ -6,7 +6,7 @@ body a
 
 div
 {
-    width: calc(33.33% - 42px); /* Cộng trừ nhân chia phải cách các phần tử ra */
+    width: (33.33% - 42px); /* Cộng trừ nhân chia phải cách các phần tử ra */
     /* height : 400px; */
 
     float: left;/* syntax để đẩy 1 box theo hướng nào đó */ /* left,right,none */
