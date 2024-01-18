@@ -1,0 +1,86 @@
+.bigboxdiv1
+{
+    background-image: url('../images/anh-nen-xam-den.jpg');
+    float: left;
+    width: 500px;
+    height: 750px;
+}
+
+#miniboxdiv1 img
+{
+    width: 400px;
+    border-radius: 100%;
+    margin: 48px;
+}
+
+#miniboxdiv2 h1
+{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+    line-height: 2.0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#miniboxdiv2 h2
+{
+    text-align: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#miniboxdiv2 p
+{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bigboxdiv2
+{
+    width: (60%-500px);
+    margin-left: 20px;
+}
+
+#miniboxdiv3 h1
+{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 0.2;
+    color: gray;
+}
+
+#miniboxdiv3 p
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-align: center;
+    border-bottom : 2px solid black;
+    line-height: 2;
+}
+
+#miniboxdiv4 h1
+{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 1;
+    color: gray;
+}
+
+#miniboxdiv4 h2
+{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+#miniboxdiv4 p
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.5;
+}
