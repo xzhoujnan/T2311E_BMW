@@ -13,6 +13,6 @@
         <div class="container">
             <h1>DemoJS</h1>
         </div>
-    <script type="text/javascript" src="js/baitapjs.js"></script>
+    <script type="text/javascript" src="js/baitapjs2.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ let n = 20; //liên quan tới biến cục bộ và file,class,hằng số
 var z = x + 10; //z=20
 var z1= x + y; // "10HelloWorld!"
 var z2=y + y; //"HelloWorld!HelloWorld!"
-var z3="20" + 10; // "2010" (trong ngoặc kép = string)
+var z3="20" + 10; // "2010" (trong ngoặc kép,ngoặc kép đơn,ngoặc huyền = string)
 
 console.log(x+y+"20"+10); // = 10HelloWorld!2010
 
@@ -74,12 +74,21 @@ tinh_tong(5,"abc");
     //alert("Người dùng cần tìm hiểu thêm");
 //}
 
-var kq = prompt("Bạn bao nhiêu tuổi"); // Hàm này sẽ trả về 1 string
-var kq2= parseInt(kq)+10; //1810 // hàm parseInt chuyển 1 giá trị chuỗi thành số nguyên
+/* var kq = prompt("Bạn bao nhiêu tuổi"); // Hàm này sẽ trả về 1 string
+var kq2= parseInt(kq)+10; //1810 // hàm parseInt chuyển 1 giá trị chuỗi thành số nguyên */
+
 /*  
+    note parseInt :
     "18" = 18
     "18a" = 18
     "18a2" = 18
     "a18" => NaN (not a number)
 */
-alert("Sau 10 năm bạn đã "+kq2+" tuổi");
+
+// alert("Sau 10 năm bạn đã "+kq2+" tuổi");
+
+/* var randomNumber = Math.random(); // 0<randomNumber<1 vd output : 0.00291291923
+randomNumber = randomNumber * 100; // 0.01244 = 1.244
+randomNumber = parseInt(rd); */
+
+
