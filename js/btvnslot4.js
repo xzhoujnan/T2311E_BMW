@@ -15,17 +15,22 @@ Nếu
 
 5 số trúng giải Jackpot (100 tỷ) */
 
+function compare(arr1, arr2)
+{
+    for(var i=1; i < arr1.length; i++)
+    {
+        for(var j=1; j < arr2.length; j++)
+        {
+            if(arr1[i] === arr2[j])
+            {
+                alert(`Các số giống nhau là : ${arr[i]}`);
+            }
+        }
+    }
+}
+
 for(var i=1; i<=6; i++)
 {
-    for(var j=1; j<=6; j++)
-        {
-            var kq = [];
-
-            var kqRandom = Math.random() * 45;
-            kqRandom = parseInt(kqRandom);
-            kq.push(kqRandom)
-        }
-
     var arrSelector = [];
 
     var randomNumber = Math.random() * 45;
@@ -34,17 +39,15 @@ for(var i=1; i<=6; i++)
 
     var numberSelector = prompt(`Nhập số muốn đặt thứ ${i} : `);
     numberSelector = parseInt(numberSelector);
-
-    arrSelector.forEach(e=>
-        {
-            if(e == numberSelector)
-            {
-                alert("Bạn đã trùng");
-            }
-            else
-            {
-                alert("Chúc bạn may mắn lần sau");
-            }
-        })
 }
 
+for(var j=1; j<=6; j++)
+    {
+        var kq = [];
+
+        var kqRandom = Math.random() * 45;
+        kqRandom = parseInt(kqRandom);
+        kq.push(kqRandom);
+    }
+
+compare(arrSelector,kq);
