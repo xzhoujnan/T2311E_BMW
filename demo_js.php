@@ -10,6 +10,7 @@
     <main class="section main">
         <div class="container">
             <h1>Demo JS</h1>
+            <h2 id="string">Hello</h2>
             <h2><span id="minute">10</span> : <span id="second">00</span></h2>
         </div>
     </main>

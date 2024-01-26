@@ -4,15 +4,25 @@
 },2000);// hiển thị alert sau khi delay 2000 milisecond */
 
 
-// h.innerText = "XIN CHAO CAC BAN";
-// var h = document.getElementById("num");
 
-/* var t=10;
+var h1 = document.getElementById("string");
+h1.innerHTML="<i>Hello</i>";
+
+var colors =["red","green","orange","deeppink"];
+
+var t=10;
 var it = setInterval(function()
 {
     // alert("Hello T2311E");
     // console.log(t);
-    h.innerText = t;
+    //h.innerText = t;
+    h1.innerHTML += `<li>${t}</li>`;
+    var rd=Math.random() * 4;
+    rd = parseInt(rd);
+    var c = colors[rd];
+    var bg = colors[4-rd];
+    h1.style.color = c;
+    h1.style.backgroundColor = bg;
     t--;
     if(t<0)
     {

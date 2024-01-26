@@ -38,7 +38,7 @@ div:hover/* Khi người dùng đưa chuột vào box sẽ hiển thị lê */
 {
     background-color: rgba(173, 90, 90, 0.845);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-    /* transform: rotate(360deg); xoay(... độ) */
+    transform: rotate(360deg); xoay(... độ) */
     /* transform: translate(100px,0); */
     transform: scale(1.1); /*Làm cho các box dịch chuyển theo hướng khi di chuyển chuột đến */
 }
