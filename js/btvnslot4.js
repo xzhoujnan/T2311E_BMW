@@ -1,4 +1,4 @@
-/*Chương trình Vietlot:
+/* Chương trình Vietlot:
 Người chơi sẽ mua 1 vé với 1 bộ 6 số khác nhau (từ 0-> 45) với giá 10.000VND
 
 Khi đến kỳ quay, máy tính sẽ tạo ra 1 bộ 6 số ngẫu nhiên khác nhau (từ 0->45).
