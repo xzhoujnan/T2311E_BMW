@@ -11,19 +11,23 @@
 
     <main class="section main">
         <div class="container">
-            <div id="fan"></div>
-                <img src="../images/quat.png"/>
+            <button type="button" onclick="stopfan()">Stop Fan</button>
+            <button type="button" onclick="fan()">01</button>
+            <button type="button" onclick="fan()">02</button>
+            <button type="button" onclick="fan()">03</button>
+            <div id="fan" onmouseenter="fan()" onmouseleave="stopfan()"></div>
         </div>
-    </main>
-    <script type="text/javascript" src="js/demo3.js"></script>
-    <style>
-        #fan{
-            width : 450px;
-            height : 10px;
-            float: left;
-            margin: 300px;
-            background: black;
-        }
-    </style>
-</body>
-</html>
+        </main>
+        <script type="text/javascript" src="js/demo3.js"></script>
+        <style>
+            #fan
+            {
+                width : 450px;
+                height : 10px;
+                float: left;
+                margin: 300px;
+                background-color: black;
+            }
+        </style>
+    </body>
+    </html>

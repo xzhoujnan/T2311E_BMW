@@ -1,10 +1,20 @@
-var f = document.getElementById("fan");
+var fs;
 
-var dg=0;
-
-setInterval(function()
+function fan()
 {
-    if(dg==360) dg=0;
-    dg+=10;
-    f.style.transform =`rotate(${dg}deg)`;
-},25);
+    var f = document.getElementById("fan");
+
+    var dg=0;
+
+    fs = setInterval(function()
+    {
+        if(dg==360) dg=0;
+        dg+=10;
+        f.style.transform =`rotate(${dg}deg)`;
+    },20);
+}
+
+function stopfan()
+{
+    clearInterval(fs);
+}

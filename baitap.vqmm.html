@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VQMM</title>
+    <link rel="stylesheet" href="css/layout.csss"/>
+</head>
+<body>
+    <li><a href="bmwt2311e.html">Trang chủ</a></li>
+
+    <section class="section">
+        <div class="container">
+            <input onkeyup="enterLuckyNumber(this)" type="number" name="number" placeholder="Number..."/>
+            <button type="button" onclick="vqmm()">Start</button>
+            <p id="notification">Please enter your number</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <img style="border-radius: 100%" id="vqmm" src="images/vqmm.png" width="400px" height="400px"/>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p id="result"></p>
+        </div>
+    </section>  
+
+    <script type="text/javascript">
+
+        var valid = false;
+        var luckyNumber;
+        function enterLucKyNumber(e)
+        {
+                luckyNumber = e.value;
+                var msg = document.getElementById("notification");
+                if(luckyNumber>=0 || luckyNumber<=99)
+                {
+                    msg.innerText = "Valid";
+                    msg.style.color= "green";
+                    valid=true;
+                }
+                else
+                {
+                    msg.innerText = "Invalid";
+                    msg.style.color = "red";
+                    valid=false;
+                }
+        }
+        
+        var circle;
+        var dg=0;
+        function runGame()
+        {
+            if(valid)
+            {
+                var img = document.getElementById("vqmm");
+                circle = setInterval(function()
+                {
+                    if(dg==360) dg=0;
+                    dg+=20;
+                    img.style.transform= `rotate(${dg}deg)`;
+                },10);
+
+                setTimeout(function()
+                {
+                    clearInterval(circle);
+
+                    var rd=Math.random;
+                    rd=parseInt(rd);
+
+                    var result=document.getElementById("result");
+
+                    if(rd == luckyNumber)
+                    {
+                        result.innerHTML = `<h1 style="color:green">Chúc mừng bạn đã trúng giải</h1>`;
+                        var congrat = document.getElementById("congrat");
+                    }
+                })
+            }
+            else
+            {
+                alert("Please enter correct number!");
+            }
+        }
+    </script>
+</body>
+</html>
