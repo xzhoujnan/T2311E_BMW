@@ -69,7 +69,7 @@
                 {
                     clearInterval(circle);
 
-                    var rd=Math.random;
+                    var rd=Math.random*100;
                     rd=parseInt(rd);
 
                     var result=document.getElementById("result");
@@ -78,8 +78,15 @@
                     {
                         result.innerHTML = `<h1 style="color:green">Chúc mừng bạn đã trúng giải</h1>`;
                         var congrat = document.getElementById("congrat");
+                        congrat.play();
                     }
-                })
+                    else
+                        {
+                            result.innerHTML = `<h1 style="color:red">Chúc bạn may mắn lần sau</h1>`;
+                            var lose=document.getElementById("lose");
+                            lose.play();
+                        }
+                },5000);
             }
             else
             {
