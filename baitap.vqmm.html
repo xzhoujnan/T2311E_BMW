@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VQMM</title>
-    <link rel="stylesheet" href="css/layout.csss"/>
+    <link rel="stylesheet" href="css/layout.css"/>
 </head>
 <body>
     <li><a href="bmwt2311e.html">Trang chủ</a></li>
@@ -12,14 +12,14 @@
     <section class="section">
         <div class="container">
             <input onkeyup="enterLuckyNumber(this)" type="number" name="number" placeholder="Number..."/>
-            <button type="button" onclick="vqmm()">Start</button>
+            <button type="button" onclick="runGame()">Start</button>
             <p id="notification">Please enter your number</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <img style="border-radius: 100%" id="vqmm" src="images/vqmm.png" width="400px" height="400px"/>
+            <img style="border-radius: 100%" id="lucky" src="images/vqmm.png" width="400px" height="400px"/>
         </div>
     </section>
 
@@ -33,7 +33,7 @@
 
         var valid = false;
         var luckyNumber;
-        function enterLucKyNumber(e)
+        function enterLuckyNumber(e)
         {
                 luckyNumber = e.value;
                 var msg = document.getElementById("notification");
@@ -57,12 +57,12 @@
         {
             if(valid)
             {
-                var img = document.getElementById("vqmm");
+                var img = document.getElementById("lucky");
                 circle = setInterval(function()
                 {
                     if(dg==360) dg=0;
                     dg+=20;
-                    img.style.transform= `rotate(${dg}deg)`;
+                    img.style.transform = `rotate(${dg}deg)`;
                 },10);
 
                 setTimeout(function()
