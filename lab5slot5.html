@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 Slot 5</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/lab5slot5.css"/>
+</head>
+<body>
+    <section class="container">
+        <div class="container">
+            <ul id="boxWeather">
+                <li class="box">
+                    <div class="list">
+                        <p>Timezone</p>
+                        <h2>Temp</h2>
+                        <p>Description</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function loadBox()
+        {
+            var url = `https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+
+            fetch(url)
+            .then(js=>js.json())
+            .then(list=>
+            {
+                
+            });
+        }
+    </script>
+</body>
+</html>

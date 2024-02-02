@@ -1,0 +1,17 @@
+.box
+{
+    list-style: none;
+    float: left;
+    width: calc(100% / 4);
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.list
+{
+    box-shadow: 0 0 5px gray;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(66, 177, 220);
+}
