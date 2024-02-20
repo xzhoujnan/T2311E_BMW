@@ -30,6 +30,7 @@
 
             <label for="jobType">Job Type:</label>
             <select id="jobType" name="jobType" required>
+                <option value="select-jobType">Select your job</option>
                 <option value="developer">Developer</option>
                 <option value="designer">Designer</option>
                 <option value="manager">Manager</option>
@@ -58,11 +59,16 @@
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmPassword').value;
 
+    var phoneRegex = /^\+(\d{1,3})\d{9,10}$/;
+      if (!phoneRegex.test(phone)) {
+        alert('Your phone number is incorrect');
+        return false;
+      }
+
     if (password !== confirmPassword) {
         alert('Passwords do not match');
         return;
     }
-    console.log(`Full Name: ${fullName}, Email: ${email}, Phone: ${phone}, Job Type: ${jobType}, Password: ${password}`);
     });
     </script>
 </body>
